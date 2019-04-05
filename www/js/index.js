@@ -6,11 +6,14 @@ app.controller('submitTipsCtrl', function($scope, $http) {
         var postData = {};
         postData.tipText = $scope.tipText;
 
-        $scope.tipText = "";
-        $scope.loading = true;
+        if (postData.tipText.length > 0) {
+          $scope.tipText = "";
+          $scope.loading = true;
 
-        $http.post('https://us-central1-ajnhosting-163818.cloudfunctions.net/add-anonymous-tip', postData, {})
-            .then(postSuccess, errorCallback);
+
+          $http.post('https://us-central1-ajnhosting-163818.cloudfunctions.net/add-anonymous-tip', postData, {})
+              .then(postSuccess, errorCallback);
+        }
 
     };
 
