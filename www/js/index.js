@@ -39,7 +39,7 @@ app.controller('tipsCtrl', function($scope, $http, $interval) {
     }
 
     function processTips(response) {
-        $scope.tips = response.data.tips;
+        $scope.tips = response.data.tips.reverse();
         for (var i = 0; i < $scope.tips.length; i++) {
           var date = new Date($scope.tips[i].timestamp + ' UTC');
           $scope.tips[i].timestamp = date.toLocaleString();
