@@ -46,7 +46,7 @@ app.controller('tipsCtrl', function($scope, $http, $interval) {
         }
     }
 
-    $interval(getTips, 1000);
+    $interval(getTips, 5000);
 
 });
 
