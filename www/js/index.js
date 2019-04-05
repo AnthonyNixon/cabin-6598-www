@@ -5,9 +5,6 @@ app.controller('submitTipsCtrl', function($scope, $http) {
 
         var postData = {};
         postData.tipText = $scope.tipText;
-        if $scope.tipText == "" {
-            return;
-        }
 
         $scope.tipText = "";
         $scope.loading = true;
