@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="whohascabin6598">
+<head>
+    <title>WHO THE FUCK HAS CABIN 6598? (Tips)</title>
+    <link rel="stylesheet" type="text/css" href="../css/background.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="The world depends on us finding the person who has this cabin. Is it you?">
+    <meta name="author" content="@AnthonyNixon">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@AnthonyNixon" />
+    <meta property="og:url" content="https://whothefuckhascabin6598.com/tips/" />
+    <meta property="og:title" content="Who has Cabin 6598? Anonymous Tips" />
+    <meta property="og:description" content="Everything is riding on us finding who has this cabin. We have Anonymous Tips. Help solve the mystery!" />
+    <meta property="og:image" content="https://istrumpmeltingdown.com/img/gary.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134251456-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134251456-2');
+    </script>
+</head>
+<body>
+<div class="content" ng-controller="tipsCtrl">
+    <h1>WHO HAS CABIN 6598?</h1>
+    <h2>Current Tips:</h2>
+    <table>
+        <tr ng-repeat="tip in tips">
+            <td>{{tip.text}}</td>
+            <td>{{tip.timestamp}}</td>
+        </tr>
+    </table>
+</div>
+<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>

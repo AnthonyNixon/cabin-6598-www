@@ -1,0 +1,60 @@
+table {
+    width: 100%;
+    max-width: 100%;
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+    table-layout: fixed;
+}
+
+table td {
+    word-wrap: break-word;
+}
+
+img {
+    max-width: 50vw;
+    height: auto;
+}
+
+a {
+    color: #fff;
+}
+
+.gary {
+    margin-bottom: 0;
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: small;
+        text-align: center;
+        position: absolute;
+        width: 90vw;
+        max-width: 90vw;
+        margin-left: 5vw;
+        margin-right: auto;
+        white-space: pre-wrap;
+        position: absolute;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .content {
+        font-family: 'Open Sans';
+        font-weight: bold;
+        font-size: large;
+        text-align: center;
+        position: absolute;
+        width: 50vw;
+        max-width: 50vw;
+        margin-left: 25vw;
+        margin-right: auto;
+        white-space: pre-wrap;
+        position: absolute;
+    }
+}
+

@@ -1,11 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html ng-app="whohascabin6598">
   <head>
     <title>WHO THE FUCK HAS CABIN 6598?</title>
-    <link rel="stylesheet" type="text/css" href="background.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="input-box.css">
+    <link rel="stylesheet" type="text/css" href="css/background.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/input-box.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="The world depends on us finding the person who has this cabin. Is it you?">
+    <meta name="author" content="@AnthonyNixon">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="@AnthonyNixon" />
+    <meta property="og:url" content="https://whothefuckhascabin6598.com" />
+    <meta property="og:title" content="Who has Cabin 6598?" />
+    <meta property="og:description" content="Everything is riding on us finding who has this cabin. Please help." />
+    <meta property="og:image" content="https://istrumpmeltingdown.com/img/gary.png" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134251456-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-134251456-2');
+    </script>
   </head>
   <body>
     <div class="content">
@@ -13,11 +36,16 @@
       <p>Do you see this cabin right here? We're looking for its owner. This is the most important thing to our entire deck.<p>
       <img src="img/cabins.png"/>
       <h1>HOW CAN YOU HELP?</h1>
-      <p>We're accepting anonymous tips. This may be a terrible idea, but we're doing it regardless. Do you have any info that can help us track down who has this cabin? Enter the anonymous tip here:
-      <div class="form">
-        <input type="text" placeholder="Anonymous Tip" maxlength="150" name="anonymous_tip"/>
-        <input type="submit" action="" method="post"/>
-	    </form>
+      <p>We're accepting anonymous tips. This may be a terrible idea, but we're doing it regardless. Do you have any info that can help us track down who has this cabin? Send us your anonymous tip here:
+      <form class="form" ng-controller="submitTipsCtrl" ng-submit="sendTip()">
+          <input type="text" placeholder="Anonymous Tip" maxlength="150" name="anonymous_tip" ng-model="tipText"/>
+          <input type="submit"/>
+      </form>
+      <h3>You can <a href="/tips">view the current tips here</a></h3>
+      <p>Help us piece together this mystery</p>
+      <h1>BUTT STUFF</h1>
+      <img src="img/gary.png" class="gary"/>
     </div>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

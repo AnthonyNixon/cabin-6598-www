@@ -12,23 +12,34 @@ body {
 
 @keyframes colorchange
 {
-  0%   {background: #EE7752;}
-  16%  {background: #E73C7E;}
+	0%   {background: #EE7752;}
+	16%  {background: #E73C7E;}
 	32%  {background: #23A6D5;}
-  48%  {background: #23D5AB;}
+	48%  {background: #23D5AB;}
 	64%  {background: #23A6D5;}
 	80%  {background: #E73C7E;}
 	100% {background: #EE7752;}
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
+	width: 0px;  /* remove scrollbar space */
 }
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+	background: #FF0000;
 }
 
-html {
-	font-size: 1em;
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	body {
+		width: 100vw;
+		height: 95vh;
+		color: #fff;
+		-webkit-animation: colorchange 15s ease infinite;
+		-moz-animation: colorchange 15s ease infinite;
+		animation: colorchange 15s ease infinite;
+		overflow: scroll;
+		overflow-x: hidden;
+		display: block;
+	}
 }
