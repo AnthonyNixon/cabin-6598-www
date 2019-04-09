@@ -8,6 +8,7 @@ table {
 
 table td {
     word-wrap: break-word;
+    align: left;
 }
 
 img {
