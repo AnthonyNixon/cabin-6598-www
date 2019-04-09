@@ -9,6 +9,7 @@ table {
 table td {
     word-wrap: break-word;
     align: left;
+    text-align: left;
     width: 100%;
 }
 
