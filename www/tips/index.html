@@ -43,11 +43,11 @@
 <div class="content" ng-controller="tipsCtrl">
     <h1>WHO HAS CABIN 6598?</h1>
     <h2>Current Tips:</h2>
-    <table>
-        <tr ng-repeat="tip in tips">
-            <td>{{tip.text}}</td>
-        </tr>
-    </table>
+    <ul>
+        <li ng-repeat="tip in tips">
+            {{tip.text}}
+        </li>
+    </ul>
 </div>
 <script type="text/javascript" src="../js/index.js"></script>
 </body>
